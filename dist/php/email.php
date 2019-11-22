@@ -25,6 +25,6 @@ mail($to,$subject,$message,$headers);
 // echo "<br>"."Naam:$naam, Telefoonnummer:$telnummer, Gekozen behandeling:$behandeling, Aantal personen:$personen, Gekozen locatie:$locatie, Straatnaam en huisnummer:$straat, Postcode:$postcode en Woonplaats:$woonplaats, Bijgevoegd commentaar:$commentaar.";
 
 
-header("Location: ../../roko.php");
+header("Location: ../../index.php");
 die();
 ?>
