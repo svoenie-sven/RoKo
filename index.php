@@ -60,7 +60,7 @@
                 <h2>VIDEO</h2>
                 <p class="line"></p>
                 <span>De kracht van video.</span>
-                <br><br>
+                <br><br><br>
                 <?php echo ($video_text); ?>
               </p>
             </div>
@@ -271,7 +271,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 submit">
                   <button type="submit" class="btn btn-primary btn-raised">Verzend bericht</button>
                 </div>
               </div>
@@ -287,9 +287,11 @@
             <a target="_blank" href="https://wa.me/31610629005" class="fab fa-whatsapp show-social"></a>
           </div>
         </div>
-      </div>
-      <div class="footer container-fluid">
-        <i>&copy; RoKo Productions 2019, Website made by <br><a target="_blank" href="https://www.linkedin.com/in/sven-brilleman/">Sven Brilleman</a></i>
+        <div class="row footer">
+          <div class="col-12">
+            <i>&copy; RoKo Productions 2019, Website made by <br><a target="_blank" href="https://www.linkedin.com/in/sven-brilleman/">Sven Brilleman</a></i>
+          </div>
+        </div>
       </div>
     </div>
 

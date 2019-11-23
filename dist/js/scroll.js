@@ -1,4 +1,21 @@
-if ($(window).width() > 576) {
+//
+//
+//
+// Parallax for first page
+
+setTimeout(function () {
+  $('.logo').addClass('is-showing');
+  setTimeout(function () {
+    $('.line', $('#one')).addClass('is-showing');
+  }, 900);
+}, 100);
+
+// End Parallax for first page
+//
+//
+//
+
+if (window.innerWidth > 576 && window.innerHeight > 576) {
   function ScrollHandler(pageId) {
     var page = document.getElementById(pageId);
     var pageStart = document.getElementById(pageId).offsetTop;
@@ -10,23 +27,6 @@ if ($(window).width() > 576) {
     var pageTwo = $("#two").offset().top + (window.innerHeight / 2);
     var pageThree = $("#three").offset().top + (window.innerHeight / 2);
     var pageFour = $("#four").offset().top + (window.innerHeight / 2);
-
-    // 
-    // 
-    // 
-    // Parallax for first page
-
-    setTimeout(function () {
-      $('.logo').addClass('is-showing');
-      setTimeout(function () {
-        $('.line', $('#one')).addClass('is-showing');
-      }, 900);
-    }, 100);
-
-    // End Parallax for first page
-    // 
-    // 
-    // 
 
     function scrollToPage() {
       pageJump = true;
