@@ -619,6 +619,7 @@ body {
     }
     .vision-mission {
         flex-direction: column;
+        padding: 0 0 8vh 0;
     }
     .vision-outer, .mission-outer {
         height: 40vh;
