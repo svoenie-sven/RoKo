@@ -671,12 +671,23 @@ body {
     align-items: center;
 }
 
-.btn-primary {
+.contact-submit {
     background: var(--main-acc-color)!important;
+    color: var(--main-bg-color)!important;
+}
+
+.contact-submit:hover {
+    background: #000!important;
+}
+
+.btn-primary {
+    background-color: var(--main-bg-color)!important;
+    color: var(--main-acc-color)!important;
 }
 
 .btn-primary:hover {
     background: #000!important;
+    color: var(--main-bg-color)!important;
 }
 
 .contact-data {

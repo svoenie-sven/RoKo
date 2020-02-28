@@ -8,17 +8,17 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="dist/pic/favicon.ico" type="image/x-icon">
   <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta name="theme-color" content="#aaa">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- <meta name="description" content="RoKo Productions is gespecialiseerd in het leveren van professionele content op het gebied van audio, video en fotografie.">
-  <meta property="og:image" content="https://rokoproductions.com/roko/dist/pic/logo.png">
+  <meta name="description" content="RoKo Productions is gespecialiseerd in het leveren van professionele content op het gebied van audio, video en fotografie.">
+  <meta property="og:image" content="https://rokoproductions.com/dist/pic/logo.png">
   <meta property="og:description" content="RoKo Productions is gespecialiseerd in het leveren van professionele content op het gebied van audio, video en fotografie.">
   <meta property="og:title" content="RoKo Productions">
-  <meta name="twitter:title" content="RoKo Productions"> -->
+  <meta name="twitter:title" content="RoKo Productions">
 
   <!-- Scrips -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.slim.min.js"></script>
@@ -281,7 +281,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12 submit">
-                  <button type="submit" class="btn btn-primary btn-raised">Verzend bericht</button>
+                  <button type="submit" class="btn btn-raised contact-submit">Verzend bericht</button>
                 </div>
               </div>
             </form>
