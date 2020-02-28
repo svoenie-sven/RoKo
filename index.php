@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="theme-color" content="#009688">
+  <meta name="theme-color" content="#aaa">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <!-- <meta name="description" content="RoKo Productions is gespecialiseerd in het leveren van professionele content op het gebied van audio, video en fotografie.">
   <meta property="og:image" content="https://rokoproductions.com/roko/dist/pic/logo.png">
@@ -122,8 +122,8 @@
           </div>
         </div>
         <div class="row partner-row">
-          <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#varoses-modal">
-            <img class="partner" src="dist/pic/portfolio/varoses.png">
+        <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#pathe-modal">
+            <img class="partner" src="dist/pic/portfolio/pathe.png">
           </div>
           <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#ongeremd-modal">
             <img class="partner" src="dist/pic/portfolio/ongeremd.png">
@@ -136,8 +136,8 @@
           </div>
         </div>
         <div class="row partner-row">
-          <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#pathe-modal">
-            <img class="partner" src="dist/pic/portfolio/pathe.png">
+          <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#varoses-modal">
+            <img class="partner" src="dist/pic/portfolio/varoses.png">
           </div>
           <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#warrior-academy-modal">
             <img class="partner" src="dist/pic/portfolio/warrior-academy.png">
@@ -298,37 +298,13 @@
         </div>
         <div class="row footer">
           <div class="col-12">
-            <i>&copy; RoKo Productions 2019, Website made by <br><a target="_blank" href="https://www.linkedin.com/in/sven-brilleman/">Sven Brilleman</a></i>
+            <i>&copy; RoKo Productions <?php echo date("Y") ?>, Website made by <br><a target="_blank" href="https://www.linkedin.com/in/sven-brilleman/" class="sven-link">Sven Brilleman</a></i>
           </div>
         </div>
       </div>
     </div>
 
   </div><!-- Scroll -->
-
-  <!-- Navbar -->
-  <!-- <nav class="navbar navbar-expand-md navbar-light bg-light" id="navbar">
-    <span class="navbar-brand"><img src="dist/pic/logo.png"
-        style="padding-left:1vw;padding-right:1vw;height:3rem;" /></span>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" id="toTop">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Diensten</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Over ons</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav my-2 my-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
 </body>
 
 </html>

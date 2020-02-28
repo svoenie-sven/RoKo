@@ -13,7 +13,7 @@ body {
 
 :root {
     --main-bg-color: #fff;
-    --main-acc-color: #009688;
+    --main-acc-color: #aaa;
 }
 
 @media (max-width: 980.98px) {
@@ -51,53 +51,7 @@ body {
 
 /* End */
 
-/* Styles for navbar */
-
-/* .navbar {
-    transition: color 0.3s ease;
-    -webkit-box-shadow: 0px 100px 400px -50px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 100px 400px -50px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 100px 400px -50px rgba(0, 0, 0, 0.5);
-    margin-left: 40vw;
-    width: 50vw;
-    transition: margin-left 0.3s ease, margin-right 0.3s ease, width 0.3s ease;
-}
-
-.nav-link {
-    color: #888;
-    transition: 0.3s ease;
-    padding-left: 1vw!important;
-    padding-right: 1vw!important;
-    text-transform: capitalize;
-    transition: color 0.5s ease;
-}
-
-.nav-item:hover>.nav-link {
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.sticky {
-    position: fixed!important;
-    top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100vw;
-}
-
-#toTop {
-    color: #888;
-    font-weight: bold;
-}
-
-#toTop:hover {
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-} */
-
-/* End Styles for navbar */
+/* Pages */
 
 #scroll {
     position: absolute;
@@ -113,20 +67,19 @@ body {
     position: relative!important;
 }
 
-/* Pages */
-
 #one, #two, #four {
     background-repeat: no-repeat!important;
-    background-position: center center!important;
-    background-size: auto 130%!important;
+    background-size: 110% auto!important;
 }
 
 #one {
-    background: url('../pic/pic1.png');
+    background: url('../pic/RoKo-1.jpg');
+    background-position: center bottom!important;
 }
 
 #two {
-    background: url('../pic/pic3.png');
+    background: url('../pic/RoKo-2.jpg');
+    background-position: center center!important;
 }
 
 #three, #five {
@@ -134,7 +87,8 @@ body {
 }
 
 #four {
-    background: url('../pic/pic5.png');
+    background: url('../pic/RoKo-3.jpg');
+    background-position: center top!important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,7 +103,29 @@ body {
 
 @media (max-width: 980.98px) and (orientation: landscape) {
     #one, #two {
-        background-size: 130% auto!important;
+        background-size: 110% auto!important;
+    }
+    #one {
+        background-position: 90% 80%!important;
+    }
+    #four {
+        background-size: auto 110%!important;
+        background-position: center top!important;
+    }
+}
+
+@media (orientation: portrait) {
+    #one, #two, #four {
+        background-size: auto 100%!important;
+    }
+    #one {
+        background-position: 30% center!important;
+    }
+    #two {
+        background-position: center center!important;
+    }
+    #four {
+        background-position: 40% center!important;
     }
 }
 
@@ -286,7 +262,7 @@ body {
     }
     .page-one-text-outer {
         width: 50vw;
-        margin-left: 35vw!important;
+        margin-left: 40vw!important;
     }
     .page-one-text-inner {
         font-size: 1.6vw;
@@ -427,8 +403,10 @@ body {
     }
     .dienst-outer {
         width: 80vw;
+        /* max-height: 60vh!important; */
     }
     .dienst-inner {
+        max-height: 54vh;
         font-size: 1.6vh;
     }
 }
@@ -545,6 +523,10 @@ body {
     align-items: center;
 }
 
+.about-inner-text>span {
+    color: #000;
+}
+
 .vision-mission {
     text-align: center;
     display: flex;
@@ -586,6 +568,9 @@ body {
         height: 36vh;
         width: 40%;
     }
+    .about-inner, .vision-inner, .mission-inner {
+        font-size: 2vh;
+    }
 }
 
 @media (max-width: 980.98px) and (orientation: landscape) {
@@ -614,6 +599,12 @@ body {
 }
 
 @media (orientation: portrait) {
+    .about, .about-outer, .about-inner {
+        display: block!important;
+    }
+    .about-outer {
+        height: 59vh;
+    }
     .about-outer, .about-inner, .vision-outer, .vision-inner, .mission-outer, .mission-inner {
         border-radius: 1vh;
     }
@@ -680,6 +671,22 @@ body {
     align-items: center;
 }
 
+.btn-primary {
+    background: var(--main-acc-color)!important;
+}
+
+.btn-primary:hover {
+    background: #000!important;
+}
+
+.contact-data {
+    color: #000;
+}
+
+.contact-data>.col-1 {
+    text-align: center;
+}
+
 @media (max-width: 980.98px) and (orientation: landscape) {
     .contact-data {
         font-size: 1.6vw;
@@ -690,10 +697,6 @@ body {
     .contact-data {
         font-size: 1.6vh;
     }
-}
-
-.contact-data>.col-1 {
-    text-align: center;
 }
 
 .logo-contact {
@@ -742,10 +745,10 @@ body {
 
 @media (min-width: 981px) {
     .show-social {
-        padding: 2vh;
-        height: 6.9vh;
-        width: 6.9vh;
-        font-size: 2.9vh;
+        padding: 1.8vh;
+        height: 6vh;
+        width: 6vh;
+        font-size: 2.4vh;
         opacity: 0;
         transform: translateX(100px);
         transition: all 0.3s ease-in-out;
@@ -778,6 +781,14 @@ body {
 
 .footer {
     text-align: center;
+}
+
+.sven-link {
+    color: var(--main-acc-color)!important;
+}
+
+.sven-link:hover {
+    color: #000!important;
 }
 
 @media (max-width: 980.98px) and (orientation: landscape) {

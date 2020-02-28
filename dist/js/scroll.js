@@ -27,6 +27,84 @@ if (window.innerWidth > 576 && window.innerHeight > 576) {
     var pageTwo = $("#two").offset().top + (window.innerHeight / 2);
     var pageThree = $("#three").offset().top + (window.innerHeight / 2);
     var pageFour = $("#four").offset().top + (window.innerHeight / 2);
+    var showedAll = false;
+
+    // Parallax Functions
+
+    function parallaxOne() {
+      if (scrolled.scrollTop > pageOne) {
+        setTimeout(function () {
+          $('.dienst-outer-two').addClass('is-showing');
+          setTimeout(function () {
+            $('.dienst-outer-one').addClass('is-showing');
+            $('.dienst-outer-three').addClass('is-showing');
+            setTimeout(function () {
+              $('.line', $('#two')).each(function (i) {
+                setTimeout(function () {
+                  $('.line', $('#two')).eq(i).addClass('is-showing');
+                }, (400 * i) + 400);
+              });
+            }, 500);
+          }, 500);
+        }, 200);
+      }
+    }
+
+    function parallaxTwo() {
+      if (scrolled.scrollTop > pageTwo) {
+        $('.partner-col').each(function (i) {
+          setTimeout(function () {
+            $('.partner-col').eq(i).addClass('is-showing');
+            setTimeout(function () {
+              $('.line', $('#three')).each(function (i) {
+                setTimeout(function () {
+                  $('.line', $('#three')).eq(i).addClass('is-showing');
+                }, (700 * (Math.exp(i * 0.3))) - 200);
+              });
+            }, 1000);
+          }, (100 * i) + 200);
+        });
+      }
+    }
+
+    function parallaxThree() {
+      if (scrolled.scrollTop > pageThree) {
+        $('.about-col', $('#four')).each(function (i) {
+          setTimeout(function () {
+            $('.about-col', $('#four')).eq(i).addClass('is-showing');
+            setTimeout(function () {
+              $('.line', $('#four')).each(function (i) {
+                setTimeout(function () {
+                  $('.line', $('#four')).eq(i).addClass('is-showing');
+                }, (700 * (Math.exp(i * 0.3))) - 200);
+              });
+            }, 400);
+          }, (200 * i) + 200);
+        });
+      }
+    }
+
+    function parallaxFour() {
+      if (scrolled.scrollTop > pageFour) {
+        // To stop scrollbar interval
+        showedAll = true;
+
+        $('.show-social').each(function (i) {
+          setTimeout(function () {
+            $('.show-social').eq(i).addClass('is-showing');
+            setTimeout(function () {
+              $('.line', $('#five')).each(function (i) {
+                setTimeout(function () {
+                  $('.line', $('#five')).eq(i).addClass('is-showing');
+                }, (700 * (Math.exp(i * 0.3))) - 200);
+              });
+            }, 1500);
+          }, (400 * i));
+        });
+      }
+    }
+
+    // End of Parallax Functions
 
     function scrollToPage() {
       pageJump = true;
@@ -70,85 +148,36 @@ if (window.innerWidth > 576 && window.innerHeight > 576) {
         runAnimation = requestAnimationFrame(animate);
         stopAnimationIfRequired(position);
 
-        // 
-        // 
-        // 
-        // Parallax 
+        // Do Parallax 
 
+        parallaxOne();
+        parallaxTwo();
+        parallaxThree();
+        parallaxFour();
 
-
-        if (scrolled.scrollTop > pageOne) {
-          setTimeout(function () {
-            $('.dienst-outer-two').addClass('is-showing');
-            setTimeout(function () {
-              $('.dienst-outer-one').addClass('is-showing');
-              $('.dienst-outer-three').addClass('is-showing');
-              setTimeout(function () {
-                $('.line', $('#two')).each(function (i) {
-                  setTimeout(function () {
-                    $('.line', $('#two')).eq(i).addClass('is-showing');
-                  }, (400 * i) + 400);
-                });
-              }, 500);
-            }, 500);
-          }, 200);
-        }
-
-        if (scrolled.scrollTop > pageTwo) {
-          $('.partner-col').each(function (i) {
-            setTimeout(function () {
-              $('.partner-col').eq(i).addClass('is-showing');
-              setTimeout(function () {
-                $('.line', $('#three')).each(function (i) {
-                  setTimeout(function () {
-                    $('.line', $('#three')).eq(i).addClass('is-showing');
-                  }, (700 * (Math.exp(i * 0.3))) - 200);
-                });
-              }, 1000);
-            }, (100 * i) + 200);
-          });
-        }
-
-        if (scrolled.scrollTop > pageThree) {
-          $('.about-col', $('#four')).each(function (i) {
-            setTimeout(function () {
-              $('.about-col', $('#four')).eq(i).addClass('is-showing');
-              setTimeout(function () {
-                $('.line', $('#four')).each(function (i) {
-                  setTimeout(function () {
-                    $('.line', $('#four')).eq(i).addClass('is-showing');
-                  }, (700 * (Math.exp(i * 0.3))) - 200);
-                });
-              }, 400);
-            }, (200 * i) + 200);
-          });
-        }
-
-        if (scrolled.scrollTop > pageFour) {
-          $('.show-social').each(function (i) {
-            setTimeout(function () {
-              $('.show-social').eq(i).addClass('is-showing');
-              setTimeout(function () {
-                $('.line', $('#five')).each(function (i) {
-                  setTimeout(function () {
-                    $('.line', $('#five')).eq(i).addClass('is-showing');
-                  }, (700 * (Math.exp(i * 0.3))) - 200);
-                });
-              }, 1500);
-            }, (400 * i));
-          });
-        }
-
-        // End Parallax 
-        // 
-        // 
-        // 
-
+        // End Do Parallax
       };
       // Loop the animation function
       runAnimation = requestAnimationFrame(animate);
     }
 
+    // If user uses scrollbar...
+    window.addEventListener("mousedown", onMouseDown);
+    function onMouseDown(e) {
+      if (e.offsetX > e.target.clientWidth) {
+        if (!showedAll) {
+          console.log("TRY");
+          setInterval(function () {
+            parallaxOne();
+            parallaxTwo();
+            parallaxThree();
+            parallaxFour();
+          }, 10);
+        }
+      }
+    }
+
+    // If user uses mousewheel
     window.addEventListener("wheel", function (event) {
       viewStart = scrolled.scrollTop;
       if (!pageJump) {
