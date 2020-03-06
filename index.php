@@ -212,7 +212,6 @@
                 <h5>Contactgegevens:</h5>
               </div>
             </div>
-            <br>
             <div class="row contact-data">
               <div class="col-1">
                 <i class="fas fa-map-marker-alt"></i>
@@ -237,7 +236,6 @@
                 <span>E-mail: info@rokoproductions.com</span>
               </div>
             </div>
-            <br>
             <div class="row">
               <div class="col-12">
                 <img src="dist/pic/logo.png" class="logo-contact" />
@@ -257,7 +255,7 @@
                   <fieldset class="form-group">
                     <label for="name-input" class="bmd-label-floating">Naam</label>
                     <input type="text" class="form-control" id="name-input" name="naam" pattern=".{2,}" required>
-                    <span class="bmd-help">Vooraam en achternaam</span>
+                    <span class="bmd-help">Voor- en achternaam</span>
                   </fieldset>
                 </div>
               </div>
@@ -274,7 +272,7 @@
                 <div class="col-md-12">
                   <fieldset class="form-group">
                     <label for="tekst-input" class="bmd-label-floating">Bericht</label>
-                    <textarea class="form-control" id="tekst-input" rows="6" name="bericht" minlength="10" required></textarea>
+                    <textarea class="form-control" id="tekst-input" rows="5" name="bericht" minlength="10" required></textarea>
                     <span class="bmd-help">Schrijf hier waarom u contact met ons wilt maken</span>
                   </fieldset>
                 </div>

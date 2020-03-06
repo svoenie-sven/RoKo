@@ -603,7 +603,7 @@ body {
         display: block!important;
     }
     .about-outer {
-        height: 59vh;
+        height: 63vh;
     }
     .about-outer, .about-inner, .vision-outer, .vision-inner, .mission-outer, .mission-inner {
         border-radius: 1vh;
@@ -671,6 +671,10 @@ body {
     align-items: center;
 }
 
+.submit {
+    margin-top: 1rem;
+}
+
 .contact-submit {
     background: var(--main-acc-color)!important;
     color: var(--main-bg-color)!important;
@@ -712,6 +716,7 @@ body {
 
 .logo-contact {
     width: 50%;
+    padding: 1rem 0;
 }
 
 @media (max-width: 980.98px) and (orientation: landscape) {
@@ -733,6 +738,10 @@ body {
     }
 }
 
+fieldset {
+    margin-bottom: 3px !important;
+}
+
 #tekst-input {
     height: 64px;
     min-height: 30px;
@@ -741,7 +750,7 @@ body {
 
 .contact-social {
     text-align: center;
-    padding: 4vh 0;
+    padding: 2vh 0;
 }
 
 .show-social {
