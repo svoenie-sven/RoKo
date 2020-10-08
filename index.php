@@ -225,7 +225,7 @@
                 <i class="fas fa-mobile-alt"></i>
               </div>
               <div class="col-11">
-                <span>+31 6 10 62 90 05</span>
+                <span>+31 6 42 88 33 88</span>
               </div>
             </div>
             <div class="row contact-data">
@@ -291,7 +291,7 @@
             <a target="_blank" href="https://www.instagram.com/rokoproductions/" class="fab fa-instagram show-social"></a>
             <a target="_blank" href="https://www.facebook.com/Roko-Productions-242692819566473/?fref=nf" class="fab fa-facebook-f show-social"></a>
             <a target="_blank" href="https://vimeo.com/user72743224" class="fab fa-vimeo-v show-social"></a>
-            <a target="_blank" href="https://wa.me/31610629005" class="fab fa-whatsapp show-social"></a>
+            <a target="_blank" href="https://wa.me/31642883388" class="fab fa-whatsapp show-social"></a>
           </div>
         </div>
         <div class="row footer">
