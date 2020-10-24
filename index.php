@@ -114,15 +114,18 @@
           </div>
         </div>
         <div class="row partner-row">
+          <div class="col-md-6 col-6 partner-col" data-toggle="modal" data-target="#stek-modal">
+            <img class="partner" src="dist/pic/portfolio/stek.png">
+          </div>
           <div class="col-md-6 col-6 partner-col" data-toggle="modal" data-target="#jdrf-modal">
             <img class="partner" src="dist/pic/portfolio/jdrf.png">
           </div>
-          <div class="col-md-6 col-6 partner-col" data-toggle="modal" data-target="#superdry-modal">
-            <img class="partner" src="dist/pic/portfolio/superdry.png">
-          </div>
         </div>
         <div class="row partner-row">
-        <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#pathe-modal">
+          <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#superdry-modal">
+            <img class="partner" src="dist/pic/portfolio/superdry.png">
+          </div>
+          <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#pathe-modal">
             <img class="partner" src="dist/pic/portfolio/pathe.png">
           </div>
           <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#ongeremd-modal">
@@ -131,11 +134,11 @@
           <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#roc-top-modal">
             <img class="partner" src="dist/pic/portfolio/roc-top.png">
           </div>
+        </div>
+        <div class="row partner-row">
           <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#d66-modal">
             <img class="partner" src="dist/pic/portfolio/d66.png">
           </div>
-        </div>
-        <div class="row partner-row">
           <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#varoses-modal">
             <img class="partner" src="dist/pic/portfolio/varoses.png">
           </div>
@@ -144,9 +147,6 @@
           </div>
           <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#run-for-kika-modal">
             <img class="partner" src="dist/pic/portfolio/run-for-kika.png">
-          </div>
-          <div class="col-md-3 col-6 partner-col" data-toggle="modal" data-target="#snapking-modal">
-            <img class="partner" src="dist/pic/portfolio/snapking.png">
           </div>
         </div>
       </div>

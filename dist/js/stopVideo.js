@@ -1,3 +1,6 @@
+$("#stek-modal").on('hidden.bs.modal', function (e) {
+    $("#stek-modal iframe").attr("src", $("#stek-modal iframe").attr("src"));
+});
 $("#jdrf-modal").on('hidden.bs.modal', function (e) {
     $("#jdrf-modal iframe").attr("src", $("#jdrf-modal iframe").attr("src"));
 });
@@ -24,7 +27,4 @@ $("#warrior-academy-modal").on('hidden.bs.modal', function (e) {
 });
 $("#run-for-kika-modal").on('hidden.bs.modal', function (e) {
     $("#run-for-kika-modal iframe").attr("src", $("#run-for-kika-modal iframe").attr("src"));
-});
-$("#snapking-modal").on('hidden.bs.modal', function (e) {
-    $("#snapking-modal iframe").attr("src", $("#snapking-modal iframe").attr("src"));
 });
